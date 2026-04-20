@@ -1,0 +1,51 @@
+=== conflicting_sources ===
+You are given multiple data sources about the same entity.
+
+Sources:
+- Source A: reported value = {value_a}
+- Source B: reported value = {value_b}
+- Source C: reported value = {value_c}
+
+Task:
+1. Decide which value is most plausible.
+2. Explain your reasoning.
+3. Explicitly state any uncertainty.
+
+Return your answer in JSON with fields:
+- "chosen_value"
+- "rationale"
+- "uncertainty_description"
+
+=== missing_data ===
+You are given partial or incomplete data about an entity.
+
+Known fields:
+{known_fields}
+
+Task:
+1. Infer the most plausible value for the missing field.
+2. Explain your reasoning.
+3. Explicitly state any uncertainty.
+
+Return your answer in JSON with fields:
+- "chosen_value"
+- "rationale"
+- "uncertainty_description"
+
+You MUST return ONLY valid JSON.
+No explanations.
+No markdown.
+No text outside the JSON object.
+
+Your response MUST match this exact schema:
+
+{{
+  "chosen_value": "<string>",
+  "rationale": "<string>",
+  "uncertainty_description": "<string>"
+}}
+
+If you cannot determine the answer, still fill all fields with text.
+Do NOT leave any field empty.
+Do NOT output an empty string.
+Do NOT output null.

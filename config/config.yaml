@@ -1,0 +1,27 @@
+experiment:
+  name: "llm_reliability_noisy_multisource"
+  seed: 42
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  n_samples: 40
+  noise_levels:
+    - low
+    - high
+
+model:
+  provider: "local"
+  model_name: "meta-llama-3.1-8b-instruct"
+  base_url: "http://127.0.0.1:1234/v1"
+  max_tokens: 512
+  temperature: 0.2
+
+prompts:
+  base_path: "prompts/base_prompts.txt"
+  adversarial_path: "prompts/adversarial_prompts.txt"
+
+evaluation:
+  n_runs_per_sample: 1
+  output_path: "results/outputs.json"
+  summary_path: "results/summary.md"

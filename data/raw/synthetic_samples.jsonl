@@ -1,0 +1,80 @@
+{"id": "conflict_low_0", "type": "conflicting_sources", "true_value": 35, "sources": {"A": 35, "B": 30, "C": 35}, "noise_level": "low"}
+{"id": "conflict_low_1", "type": "conflicting_sources", "true_value": 48, "sources": {"A": 48, "B": 43, "C": 58}, "noise_level": "low"}
+{"id": "conflict_low_2", "type": "conflicting_sources", "true_value": 81, "sources": {"A": 81, "B": 81, "C": 91}, "noise_level": "low"}
+{"id": "conflict_low_3", "type": "conflicting_sources", "true_value": 15, "sources": {"A": 15, "B": 15, "C": 15}, "noise_level": "low"}
+{"id": "conflict_low_4", "type": "conflicting_sources", "true_value": 66, "sources": {"A": 66, "B": 71, "C": 76}, "noise_level": "low"}
+{"id": "conflict_low_5", "type": "conflicting_sources", "true_value": 62, "sources": {"A": 62, "B": 62, "C": 52}, "noise_level": "low"}
+{"id": "conflict_low_6", "type": "conflicting_sources", "true_value": 25, "sources": {"A": 25, "B": 20, "C": 25}, "noise_level": "low"}
+{"id": "conflict_low_7", "type": "conflicting_sources", "true_value": 28, "sources": {"A": 28, "B": 33, "C": 38}, "noise_level": "low"}
+{"id": "conflict_low_8", "type": "conflicting_sources", "true_value": 54, "sources": {"A": 54, "B": 49, "C": 54}, "noise_level": "low"}
+{"id": "conflict_low_9", "type": "conflicting_sources", "true_value": 86, "sources": {"A": 86, "B": 86, "C": 86}, "noise_level": "low"}
+{"id": "conflict_low_10", "type": "conflicting_sources", "true_value": 29, "sources": {"A": 29, "B": 24, "C": 19}, "noise_level": "low"}
+{"id": "conflict_low_11", "type": "conflicting_sources", "true_value": 25, "sources": {"A": 25, "B": 30, "C": 25}, "noise_level": "low"}
+{"id": "conflict_low_12", "type": "conflicting_sources", "true_value": 32, "sources": {"A": 32, "B": 37, "C": 32}, "noise_level": "low"}
+{"id": "conflict_low_13", "type": "conflicting_sources", "true_value": 24, "sources": {"A": 24, "B": 29, "C": 34}, "noise_level": "low"}
+{"id": "conflict_low_14", "type": "conflicting_sources", "true_value": 67, "sources": {"A": 67, "B": 72, "C": 67}, "noise_level": "low"}
+{"id": "conflict_low_15", "type": "conflicting_sources", "true_value": 28, "sources": {"A": 28, "B": 33, "C": 18}, "noise_level": "low"}
+{"id": "conflict_low_16", "type": "conflicting_sources", "true_value": 59, "sources": {"A": 59, "B": 54, "C": 49}, "noise_level": "low"}
+{"id": "conflict_low_17", "type": "conflicting_sources", "true_value": 47, "sources": {"A": 47, "B": 52, "C": 37}, "noise_level": "low"}
+{"id": "conflict_low_18", "type": "conflicting_sources", "true_value": 59, "sources": {"A": 59, "B": 64, "C": 69}, "noise_level": "low"}
+{"id": "conflict_low_19", "type": "conflicting_sources", "true_value": 82, "sources": {"A": 82, "B": 77, "C": 72}, "noise_level": "low"}
+{"id": "missing_low_0", "type": "missing_data", "full_record": {"age": 79, "income": 81564, "city": "Chicago"}, "observed_record": {"income": 81564, "city": "Chicago"}, "missing_field": "age", "noise_level": "low"}
+{"id": "missing_low_1", "type": "missing_data", "full_record": {"age": 54, "income": 56434, "city": "Boston"}, "observed_record": {"income": 56434, "city": "Boston"}, "missing_field": "age", "noise_level": "low"}
+{"id": "missing_low_2", "type": "missing_data", "full_record": {"age": 66, "income": 128799, "city": "Chicago"}, "observed_record": {"age": 66, "income": 128799}, "missing_field": "city", "noise_level": "low"}
+{"id": "missing_low_3", "type": "missing_data", "full_record": {"age": 51, "income": 112616, "city": "Boston"}, "observed_record": {"age": 51, "city": "Boston"}, "missing_field": "income", "noise_level": "low"}
+{"id": "missing_low_4", "type": "missing_data", "full_record": {"age": 30, "income": 116794, "city": "Boston"}, "observed_record": {"income": 116794, "city": "Boston"}, "missing_field": "age", "noise_level": "low"}
+{"id": "missing_low_5", "type": "missing_data", "full_record": {"age": 71, "income": 81644, "city": "Seattle"}, "observed_record": {"age": 71, "income": 81644}, "missing_field": "city", "noise_level": "low"}
+{"id": "missing_low_6", "type": "missing_data", "full_record": {"age": 26, "income": 120008, "city": "Chicago"}, "observed_record": {"income": 120008, "city": "Chicago"}, "missing_field": "age", "noise_level": "low"}
+{"id": "missing_low_7", "type": "missing_data", "full_record": {"age": 53, "income": 71790, "city": "Chicago"}, "observed_record": {"age": 53, "income": 71790}, "missing_field": "city", "noise_level": "low"}
+{"id": "missing_low_8", "type": "missing_data", "full_record": {"age": 40, "income": 51485, "city": "Boston"}, "observed_record": {"age": 40, "income": 51485}, "missing_field": "city", "noise_level": "low"}
+{"id": "missing_low_9", "type": "missing_data", "full_record": {"age": 77, "income": 35187, "city": "Seattle"}, "observed_record": {"age": 77, "city": "Seattle"}, "missing_field": "income", "noise_level": "low"}
+{"id": "missing_low_10", "type": "missing_data", "full_record": {"age": 19, "income": 67266, "city": "Boston"}, "observed_record": {"age": 19, "city": "Boston"}, "missing_field": "income", "noise_level": "low"}
+{"id": "missing_low_11", "type": "missing_data", "full_record": {"age": 28, "income": 66732, "city": "Chicago"}, "observed_record": {"income": 66732, "city": "Chicago"}, "missing_field": "age", "noise_level": "low"}
+{"id": "missing_low_12", "type": "missing_data", "full_record": {"age": 50, "income": 33896, "city": "Boston"}, "observed_record": {"age": 50, "income": 33896}, "missing_field": "city", "noise_level": "low"}
+{"id": "missing_low_13", "type": "missing_data", "full_record": {"age": 48, "income": 113069, "city": "Chicago"}, "observed_record": {"age": 48, "city": "Chicago"}, "missing_field": "income", "noise_level": "low"}
+{"id": "missing_low_14", "type": "missing_data", "full_record": {"age": 46, "income": 59108, "city": "Chicago"}, "observed_record": {"age": 46, "city": "Chicago"}, "missing_field": "income", "noise_level": "low"}
+{"id": "missing_low_15", "type": "missing_data", "full_record": {"age": 55, "income": 49015, "city": "Boston"}, "observed_record": {"age": 55, "city": "Boston"}, "missing_field": "income", "noise_level": "low"}
+{"id": "missing_low_16", "type": "missing_data", "full_record": {"age": 53, "income": 122094, "city": "Chicago"}, "observed_record": {"age": 53, "city": "Chicago"}, "missing_field": "income", "noise_level": "low"}
+{"id": "missing_low_17", "type": "missing_data", "full_record": {"age": 31, "income": 75566, "city": "Seattle"}, "observed_record": {"income": 75566, "city": "Seattle"}, "missing_field": "age", "noise_level": "low"}
+{"id": "missing_low_18", "type": "missing_data", "full_record": {"age": 70, "income": 41638, "city": "Seattle"}, "observed_record": {"income": 41638, "city": "Seattle"}, "missing_field": "age", "noise_level": "low"}
+{"id": "missing_low_19", "type": "missing_data", "full_record": {"age": 31, "income": 37577, "city": "Chicago"}, "observed_record": {"age": 31, "income": 37577}, "missing_field": "city", "noise_level": "low"}
+{"id": "conflict_high_0", "type": "conflicting_sources", "true_value": 23, "sources": {"A": 23, "B": 28, "C": 13}, "noise_level": "high"}
+{"id": "conflict_high_1", "type": "conflicting_sources", "true_value": 85, "sources": {"A": 85, "B": 90, "C": 95}, "noise_level": "high"}
+{"id": "conflict_high_2", "type": "conflicting_sources", "true_value": 92, "sources": {"A": 92, "B": 92, "C": 92}, "noise_level": "high"}
+{"id": "conflict_high_3", "type": "conflicting_sources", "true_value": 29, "sources": {"A": 29, "B": 34, "C": 39}, "noise_level": "high"}
+{"id": "conflict_high_4", "type": "conflicting_sources", "true_value": 15, "sources": {"A": 15, "B": 20, "C": 15}, "noise_level": "high"}
+{"id": "conflict_high_5", "type": "conflicting_sources", "true_value": 57, "sources": {"A": 57, "B": 52, "C": 47}, "noise_level": "high"}
+{"id": "conflict_high_6", "type": "conflicting_sources", "true_value": 93, "sources": {"A": 93, "B": 93, "C": 83}, "noise_level": "high"}
+{"id": "conflict_high_7", "type": "conflicting_sources", "true_value": 15, "sources": {"A": 15, "B": 20, "C": 25}, "noise_level": "high"}
+{"id": "conflict_high_8", "type": "conflicting_sources", "true_value": 77, "sources": {"A": 77, "B": 72, "C": 77}, "noise_level": "high"}
+{"id": "conflict_high_9", "type": "conflicting_sources", "true_value": 64, "sources": {"A": 64, "B": 69, "C": 74}, "noise_level": "high"}
+{"id": "conflict_high_10", "type": "conflicting_sources", "true_value": 86, "sources": {"A": 86, "B": 86, "C": 76}, "noise_level": "high"}
+{"id": "conflict_high_11", "type": "conflicting_sources", "true_value": 19, "sources": {"A": 19, "B": 24, "C": 19}, "noise_level": "high"}
+{"id": "conflict_high_12", "type": "conflicting_sources", "true_value": 93, "sources": {"A": 93, "B": 98, "C": 93}, "noise_level": "high"}
+{"id": "conflict_high_13", "type": "conflicting_sources", "true_value": 29, "sources": {"A": 29, "B": 29, "C": 39}, "noise_level": "high"}
+{"id": "conflict_high_14", "type": "conflicting_sources", "true_value": 59, "sources": {"A": 59, "B": 59, "C": 49}, "noise_level": "high"}
+{"id": "conflict_high_15", "type": "conflicting_sources", "true_value": 41, "sources": {"A": 41, "B": 41, "C": 31}, "noise_level": "high"}
+{"id": "conflict_high_16", "type": "conflicting_sources", "true_value": 66, "sources": {"A": 66, "B": 71, "C": 66}, "noise_level": "high"}
+{"id": "conflict_high_17", "type": "conflicting_sources", "true_value": 10, "sources": {"A": 10, "B": 5, "C": 0}, "noise_level": "high"}
+{"id": "conflict_high_18", "type": "conflicting_sources", "true_value": 57, "sources": {"A": 57, "B": 62, "C": 67}, "noise_level": "high"}
+{"id": "conflict_high_19", "type": "conflicting_sources", "true_value": 46, "sources": {"A": 46, "B": 51, "C": 36}, "noise_level": "high"}
+{"id": "missing_high_0", "type": "missing_data", "full_record": {"age": 73, "income": 124230, "city": "Seattle"}, "observed_record": {"income": 124230, "city": "Seattle"}, "missing_field": "age", "noise_level": "high"}
+{"id": "missing_high_1", "type": "missing_data", "full_record": {"age": 76, "income": 92210, "city": "Boston"}, "observed_record": {"age": 76, "income": 92210}, "missing_field": "city", "noise_level": "high"}
+{"id": "missing_high_2", "type": "missing_data", "full_record": {"age": 34, "income": 30407, "city": "Seattle"}, "observed_record": {"age": 34, "income": 30407}, "missing_field": "city", "noise_level": "high"}
+{"id": "missing_high_3", "type": "missing_data", "full_record": {"age": 34, "income": 67748, "city": "Chicago"}, "observed_record": {"income": 67748, "city": "Chicago"}, "missing_field": "age", "noise_level": "high"}
+{"id": "missing_high_4", "type": "missing_data", "full_record": {"age": 46, "income": 35636, "city": "Boston"}, "observed_record": {"age": 46, "city": "Boston"}, "missing_field": "income", "noise_level": "high"}
+{"id": "missing_high_5", "type": "missing_data", "full_record": {"age": 57, "income": 31224, "city": "Seattle"}, "observed_record": {"age": 57, "city": "Seattle"}, "missing_field": "income", "noise_level": "high"}
+{"id": "missing_high_6", "type": "missing_data", "full_record": {"age": 39, "income": 127226, "city": "Chicago"}, "observed_record": {"age": 39, "city": "Chicago"}, "missing_field": "income", "noise_level": "high"}
+{"id": "missing_high_7", "type": "missing_data", "full_record": {"age": 61, "income": 50205, "city": "Seattle"}, "observed_record": {"income": 50205, "city": "Seattle"}, "missing_field": "age", "noise_level": "high"}
+{"id": "missing_high_8", "type": "missing_data", "full_record": {"age": 78, "income": 80206, "city": "Chicago"}, "observed_record": {"income": 80206, "city": "Chicago"}, "missing_field": "age", "noise_level": "high"}
+{"id": "missing_high_9", "type": "missing_data", "full_record": {"age": 49, "income": 46847, "city": "Boston"}, "observed_record": {"income": 46847, "city": "Boston"}, "missing_field": "age", "noise_level": "high"}
+{"id": "missing_high_10", "type": "missing_data", "full_record": {"age": 61, "income": 106105, "city": "Seattle"}, "observed_record": {"age": 61, "income": 106105}, "missing_field": "city", "noise_level": "high"}
+{"id": "missing_high_11", "type": "missing_data", "full_record": {"age": 67, "income": 34550, "city": "Chicago"}, "observed_record": {"age": 67, "income": 34550}, "missing_field": "city", "noise_level": "high"}
+{"id": "missing_high_12", "type": "missing_data", "full_record": {"age": 29, "income": 122397, "city": "Seattle"}, "observed_record": {"income": 122397, "city": "Seattle"}, "missing_field": "age", "noise_level": "high"}
+{"id": "missing_high_13", "type": "missing_data", "full_record": {"age": 66, "income": 125408, "city": "Chicago"}, "observed_record": {"income": 125408, "city": "Chicago"}, "missing_field": "age", "noise_level": "high"}
+{"id": "missing_high_14", "type": "missing_data", "full_record": {"age": 57, "income": 149499, "city": "Boston"}, "observed_record": {"income": 149499, "city": "Boston"}, "missing_field": "age", "noise_level": "high"}
+{"id": "missing_high_15", "type": "missing_data", "full_record": {"age": 54, "income": 135058, "city": "Boston"}, "observed_record": {"age": 54, "city": "Boston"}, "missing_field": "income", "noise_level": "high"}
+{"id": "missing_high_16", "type": "missing_data", "full_record": {"age": 45, "income": 95561, "city": "Boston"}, "observed_record": {"age": 45, "income": 95561}, "missing_field": "city", "noise_level": "high"}
+{"id": "missing_high_17", "type": "missing_data", "full_record": {"age": 53, "income": 142291, "city": "Seattle"}, "observed_record": {"age": 53, "city": "Seattle"}, "missing_field": "income", "noise_level": "high"}
+{"id": "missing_high_18", "type": "missing_data", "full_record": {"age": 67, "income": 132406, "city": "Boston"}, "observed_record": {"income": 132406, "city": "Boston"}, "missing_field": "age", "noise_level": "high"}
+{"id": "missing_high_19", "type": "missing_data", "full_record": {"age": 70, "income": 99813, "city": "Seattle"}, "observed_record": {"income": 99813, "city": "Seattle"}, "missing_field": "age", "noise_level": "high"}

@@ -1,0 +1,18 @@
+# Adversarial Prompt 1: Irrelevant but salient features
+You are given information about an entity, including some irrelevant details.
+
+Data:
+{data_blob}
+
+Note: Some fields are intentionally irrelevant or misleading.
+
+Task:
+1. Answer the question: {question}
+2. Do NOT let irrelevant details influence your answer.
+3. Explicitly mention which fields you considered relevant.
+
+Return your answer in JSON with fields:
+- "answer"
+- "relevant_fields"
+- "irrelevant_fields"
+- "uncertainty_description"

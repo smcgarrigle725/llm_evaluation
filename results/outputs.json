@@ -1,0 +1,1762 @@
+[
+  {
+    "sample_id": "conflict_low_0",
+    "sample": {
+      "id": "conflict_low_0",
+      "type": "conflicting_sources",
+      "true_value": 35,
+      "sources": {
+        "A": 35,
+        "B": 30,
+        "C": 35
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 35\n- Source B: reported value = 30\n- Source C: reported value = 35\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 35,
+      "rationale": "The most plausible value is the one reported by Source A and Source C, which are consistent with each other. This consistency suggests that these values may be more accurate than the value reported by Source B.",
+      "uncertainty_description": "There is uncertainty in this decision because it's based on a subjective evaluation of the data sources. However, given the consistency between Source A and Source C, their reported value of 35 appears to be the most plausible."
+    }
+  },
+  {
+    "sample_id": "conflict_low_1",
+    "sample": {
+      "id": "conflict_low_1",
+      "type": "conflicting_sources",
+      "true_value": 48,
+      "sources": {
+        "A": 48,
+        "B": 43,
+        "C": 58
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 48\n- Source B: reported value = 43\n- Source C: reported value = 58\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 48,
+      "rationale": "The chosen value is from Source A, which has a reported value of 48. This value is closer to the average of the three sources (49) compared to the other two values.",
+      "uncertainty_description": "There is uncertainty in this decision due to the potential for errors or biases in each source. Additionally, there may be unknown factors that could affect the accuracy of the reported values."
+    }
+  },
+  {
+    "sample_id": "conflict_low_2",
+    "sample": {
+      "id": "conflict_low_2",
+      "type": "conflicting_sources",
+      "true_value": 81,
+      "sources": {
+        "A": 81,
+        "B": 81,
+        "C": 91
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 81\n- Source B: reported value = 81\n- Source C: reported value = 91\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 81,
+      "rationale": "The values reported by Source A and Source B are consistent, suggesting that they may be more reliable than the value reported by Source C. Additionally, the difference between the values reported by Source A and Source B is minimal, which further supports their plausibility.",
+      "uncertainty_description": "There is uncertainty in this decision due to the potential for human error or other factors that could have led to discrepancies among the sources. However, based on the available information, the value of 81 appears to be the most plausible."
+    }
+  },
+  {
+    "sample_id": "conflict_low_3",
+    "sample": {
+      "id": "conflict_low_3",
+      "type": "conflicting_sources",
+      "true_value": 15,
+      "sources": {
+        "A": 15,
+        "B": 15,
+        "C": 15
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 15\n- Source B: reported value = 15\n- Source C: reported value = 15\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 15,
+      "rationale": "All sources (A, B, and C) report the same value of 15. In the absence of any contradictory information or evidence suggesting a discrepancy among these sources, we can consider this value as the most plausible.",
+      "uncertainty_description": "There is no explicit uncertainty in the reported values from Sources A, B, and C. However, it's essential to note that there might be underlying factors (e.g., measurement errors, data collection methods) that could introduce variability or discrepancies among different sources. Without further information, we assume these sources are reliable."
+    }
+  },
+  {
+    "sample_id": "conflict_low_4",
+    "sample": {
+      "id": "conflict_low_4",
+      "type": "conflicting_sources",
+      "true_value": 66,
+      "sources": {
+        "A": 66,
+        "B": 71,
+        "C": 76
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 66\n- Source B: reported value = 71\n- Source C: reported value = 76\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 71,
+      "rationale": "The chosen value is from Source B, which has a reported value of 71. This value is closer to the average of all three sources (66 + 71 + 76) / 3 = 71. The other values are either significantly higher or lower than this average.",
+      "uncertainty_description": "There is uncertainty in choosing the most plausible value due to the potential for errors or biases in each source. However, based on the available data, Source B's reported value of 71 appears to be the most reasonable choice."
+    }
+  },
+  {
+    "sample_id": "conflict_low_5",
+    "sample": {
+      "id": "conflict_low_5",
+      "type": "conflicting_sources",
+      "true_value": 62,
+      "sources": {
+        "A": 62,
+        "B": 62,
+        "C": 52
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 62\n- Source B: reported value = 62\n- Source C: reported value = 52\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 62,
+      "rationale": "The values from Source A and Source B are consistent, while the value from Source C is significantly lower. This suggests that Source C may be an outlier or have some issue with its reporting.",
+      "uncertainty_description": "There is uncertainty in this decision due to the possibility of errors or biases in any of the sources. However, based on the available information, the values from Source A and Source B are more plausible than the value from Source C."
+    }
+  },
+  {
+    "sample_id": "conflict_low_6",
+    "sample": {
+      "id": "conflict_low_6",
+      "type": "conflicting_sources",
+      "true_value": 25,
+      "sources": {
+        "A": 25,
+        "B": 20,
+        "C": 25
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 25\n- Source B: reported value = 20\n- Source C: reported value = 25\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 25,
+      "rationale": "The chosen value is the one reported by two out of three sources (Source A and Source C), which suggests consistency across multiple data points. This increases the confidence in the accuracy of this value.",
+      "uncertainty_description": "There is some uncertainty due to the conflicting report from Source B, which may indicate an error or a different perspective on the entity's value."
+    }
+  },
+  {
+    "sample_id": "conflict_low_7",
+    "sample": {
+      "id": "conflict_low_7",
+      "type": "conflicting_sources",
+      "true_value": 28,
+      "sources": {
+        "A": 28,
+        "B": 33,
+        "C": 38
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 28\n- Source B: reported value = 33\n- Source C: reported value = 38\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 33,
+      "rationale": "Source B's value is the closest to the average of all values (33), which suggests it might be a more accurate representation. Additionally, Source A and Source C are both significantly higher than Source B, which could indicate errors or biases in those sources.",
+      "uncertainty_description": "There is significant uncertainty due to the large discrepancies between the reported values from different sources. Without further information about the methodology used by each source, it's difficult to determine which value is most accurate."
+    }
+  },
+  {
+    "sample_id": "conflict_low_8",
+    "sample": {
+      "id": "conflict_low_8",
+      "type": "conflicting_sources",
+      "true_value": 54,
+      "sources": {
+        "A": 54,
+        "B": 49,
+        "C": 54
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 54\n- Source B: reported value = 49\n- Source C: reported value = 54\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 54,
+      "rationale": "The most plausible value is the one reported by two sources (Source A and Source C) which is 54. This suggests that there may be some consistency in the data collection process or that these sources are more reliable.",
+      "uncertainty_description": "There is uncertainty due to the conflicting values reported by different sources, specifically Source B reporting a value of 49. This discrepancy could be due to various factors such as measurement errors, differences in methodology, or biases in data collection."
+    }
+  },
+  {
+    "sample_id": "conflict_low_9",
+    "sample": {
+      "id": "conflict_low_9",
+      "type": "conflicting_sources",
+      "true_value": 86,
+      "sources": {
+        "A": 86,
+        "B": 86,
+        "C": 86
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 86\n- Source B: reported value = 86\n- Source C: reported value = 86\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 86,
+      "rationale": "All sources report the same value, which suggests consistency across data sources. However, without further information about the reliability and accuracy of each source, it's difficult to determine if this value is correct or not.",
+      "uncertainty_description": "There is a high degree of uncertainty due to the lack of diversity in reported values. If all sources were independent and reliable, then the chosen value would be more plausible. However, without further information about the sources, we cannot rule out the possibility that they are biased or incorrect."
+    }
+  },
+  {
+    "sample_id": "conflict_low_10",
+    "sample": {
+      "id": "conflict_low_10",
+      "type": "conflicting_sources",
+      "true_value": 29,
+      "sources": {
+        "A": 29,
+        "B": 24,
+        "C": 19
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 29\n- Source B: reported value = 24\n- Source C: reported value = 19\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 29,
+      "rationale": "The value reported by Source A is the highest among all sources, which suggests that it may be the most accurate or up-to-date. Additionally, there is no obvious reason why the other values would be consistently lower.",
+      "uncertainty_description": "There are multiple data sources with different reported values, indicating potential inconsistencies or errors in one or more of them."
+    }
+  },
+  {
+    "sample_id": "conflict_low_11",
+    "sample": {
+      "id": "conflict_low_11",
+      "type": "conflicting_sources",
+      "true_value": 25,
+      "sources": {
+        "A": 25,
+        "B": 30,
+        "C": 25
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 25\n- Source B: reported value = 30\n- Source C: reported value = 25\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 25,
+      "rationale": "The most plausible value is the one reported by Source A and Source C, which are consistent with each other. This consistency suggests that these values may be more accurate than the value reported by Source B.",
+      "uncertainty_description": "There is uncertainty in this decision because it's based on a subjective evaluation of the data sources. However, given the consistency between Source A and Source C, their reported value seems to be the most plausible."
+    }
+  },
+  {
+    "sample_id": "conflict_low_12",
+    "sample": {
+      "id": "conflict_low_12",
+      "type": "conflicting_sources",
+      "true_value": 32,
+      "sources": {
+        "A": 32,
+        "B": 37,
+        "C": 32
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 32\n- Source B: reported value = 37\n- Source C: reported value = 32\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 32,
+      "rationale": "The chosen value is the one reported by two sources (A and C), which suggests a higher degree of reliability compared to the single report from source B. Additionally, the values reported by A and C are identical, further supporting their plausibility.",
+      "uncertainty_description": "There is uncertainty in this decision due to the conflicting reports from different sources. However, based on the available information, the value of 32 appears to be more plausible."
+    }
+  },
+  {
+    "sample_id": "conflict_low_13",
+    "sample": {
+      "id": "conflict_low_13",
+      "type": "conflicting_sources",
+      "true_value": 24,
+      "sources": {
+        "A": 24,
+        "B": 29,
+        "C": 34
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 24\n- Source B: reported value = 29\n- Source C: reported value = 34\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 29,
+      "rationale": "Source B's value is the closest to the average of all values (32.33), suggesting a more central tendency and less bias.",
+      "uncertainty_description": "There is uncertainty in this decision as it relies on an assumption about the distribution of values. However, based on the available data, Source B's value appears to be the most plausible."
+    }
+  },
+  {
+    "sample_id": "conflict_low_14",
+    "sample": {
+      "id": "conflict_low_14",
+      "type": "conflicting_sources",
+      "true_value": 67,
+      "sources": {
+        "A": 67,
+        "B": 72,
+        "C": 67
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 67\n- Source B: reported value = 72\n- Source C: reported value = 67\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 67,
+      "rationale": "The most plausible value is the one that appears twice, which suggests consistency across two independent sources (Source A and Source C). This consistency implies a higher level of reliability compared to the single report from Source B.",
+      "uncertainty_description": "There is uncertainty in this decision due to the potential for errors or biases in any individual source. However, given the consistency across two sources, it appears that 67 is the most reliable value."
+    }
+  },
+  {
+    "sample_id": "conflict_low_15",
+    "sample": {
+      "id": "conflict_low_15",
+      "type": "conflicting_sources",
+      "true_value": 28,
+      "sources": {
+        "A": 28,
+        "B": 33,
+        "C": 18
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 28\n- Source B: reported value = 33\n- Source C: reported value = 18\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 28,
+      "rationale": "Source A's reported value of 28 is the most plausible due to its central tendency among the three sources. It also lies within a reasonable range compared to the other two values.",
+      "uncertainty_description": "There is moderate uncertainty in this decision, as there are multiple conflicting data points. However, without further information about the sources' reliability or methodology, it's difficult to make a more informed choice."
+    }
+  },
+  {
+    "sample_id": "conflict_low_16",
+    "sample": {
+      "id": "conflict_low_16",
+      "type": "conflicting_sources",
+      "true_value": 59,
+      "sources": {
+        "A": 59,
+        "B": 54,
+        "C": 49
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 59\n- Source B: reported value = 54\n- Source C: reported value = 49\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 54,
+      "rationale": "Source B's value is the closest to the average of all values (59 + 54 + 49) / 3 = 54. This suggests that Source B may have a more accurate measurement or estimation method.",
+      "uncertainty_description": "There is uncertainty in this decision as it relies on an assumption about the accuracy of each source. Additionally, there could be other factors not considered here (e.g., sampling error, measurement bias) that affect the plausibility of each value."
+    }
+  },
+  {
+    "sample_id": "conflict_low_17",
+    "sample": {
+      "id": "conflict_low_17",
+      "type": "conflicting_sources",
+      "true_value": 47,
+      "sources": {
+        "A": 47,
+        "B": 52,
+        "C": 37
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 47\n- Source B: reported value = 52\n- Source C: reported value = 37\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 47,
+      "rationale": "Source A's reported value of 47 is the most plausible due to its central position among the three values. This suggests that it may be closer to the true value.",
+      "uncertainty_description": "There is significant uncertainty in this decision, as all sources have different reported values. The choice of 47 is based on its central position, but other factors such as source reliability and measurement accuracy should also be considered."
+    }
+  },
+  {
+    "sample_id": "conflict_low_18",
+    "sample": {
+      "id": "conflict_low_18",
+      "type": "conflicting_sources",
+      "true_value": 59,
+      "sources": {
+        "A": 59,
+        "B": 64,
+        "C": 69
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 59\n- Source B: reported value = 64\n- Source C: reported value = 69\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 64,
+      "rationale": "The chosen value is the median of the reported values, which suggests that it is a more central or representative value. Additionally, it is closer to the mean (61) than the other two values.",
+      "uncertainty_description": "There is uncertainty in this decision due to the limited number of sources and potential biases in each source. Further investigation into the data collection methods and sources may be necessary to increase confidence in the chosen value."
+    }
+  },
+  {
+    "sample_id": "conflict_low_19",
+    "sample": {
+      "id": "conflict_low_19",
+      "type": "conflicting_sources",
+      "true_value": 82,
+      "sources": {
+        "A": 82,
+        "B": 77,
+        "C": 72
+      },
+      "noise_level": "low"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 82\n- Source B: reported value = 77\n- Source C: reported value = 72\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 77,
+      "rationale": "Source B's value is the closest to the average of all reported values (82 + 77 + 72) / 3 = 77.6667, suggesting that it might be a more accurate representation of the entity.",
+      "uncertainty_description": "There is uncertainty in this decision as each source may have its own biases and inaccuracies. However, based on the available information, Source B's value appears to be the most plausible."
+    }
+  },
+  {
+    "sample_id": "missing_low_0",
+    "sample": {
+      "id": "missing_low_0",
+      "type": "missing_data",
+      "full_record": {
+        "age": 79,
+        "income": 81564,
+        "city": "Chicago"
+      },
+      "observed_record": {
+        "income": 81564,
+        "city": "Chicago"
+      },
+      "missing_field": "age",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"income\": 81564,\n  \"city\": \"Chicago\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "age: 35",
+      "rationale": "Based on national averages and assuming a middle-class income in Chicago, we can infer the age of this individual. The median household income in Chicago is around $63,000, but since our individual's income is higher ($81,564), we'll assume they're likely to be older with more work experience.",
+      "uncertainty_description": "This inference has a moderate level of uncertainty due to various factors such as occupation, education level, and family dynamics that can influence an individual's age."
+    }
+  },
+  {
+    "sample_id": "missing_low_1",
+    "sample": {
+      "id": "missing_low_1",
+      "type": "missing_data",
+      "full_record": {
+        "age": 54,
+        "income": 56434,
+        "city": "Boston"
+      },
+      "observed_record": {
+        "income": 56434,
+        "city": "Boston"
+      },
+      "missing_field": "age",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"income\": 56434,\n  \"city\": \"Boston\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "age: 35",
+      "rationale": "Based on US median age (2020) and assuming a typical urban resident, I inferred the age to be around 35.",
+      "uncertainty_description": "This is a rough estimate with a margin of error of at least 10 years due to lack of information about the individual's birthdate or other demographic factors."
+    }
+  },
+  {
+    "sample_id": "missing_low_2",
+    "sample": {
+      "id": "missing_low_2",
+      "type": "missing_data",
+      "full_record": {
+        "age": 66,
+        "income": 128799,
+        "city": "Chicago"
+      },
+      "observed_record": {
+        "age": 66,
+        "income": 128799
+      },
+      "missing_field": "city",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 66,\n  \"income\": 128799\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "unknown",
+      "rationale": "Insufficient data to make a plausible inference about the entity's marital status.",
+      "uncertainty_description": "The available information does not provide any clues about the entity's marital status, making it impossible to determine a reliable value."
+    }
+  },
+  {
+    "sample_id": "missing_low_3",
+    "sample": {
+      "id": "missing_low_3",
+      "type": "missing_data",
+      "full_record": {
+        "age": 51,
+        "income": 112616,
+        "city": "Boston"
+      },
+      "observed_record": {
+        "age": 51,
+        "city": "Boston"
+      },
+      "missing_field": "income",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 51,\n  \"city\": \"Boston\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "male",
+      "rationale": "Based on average life expectancy and common age ranges for males in Boston, it is plausible that the person is a male.",
+      "uncertainty_description": "This inference is uncertain due to lack of information about gender, and may not be accurate."
+    }
+  },
+  {
+    "sample_id": "missing_low_4",
+    "sample": {
+      "id": "missing_low_4",
+      "type": "missing_data",
+      "full_record": {
+        "age": 30,
+        "income": 116794,
+        "city": "Boston"
+      },
+      "observed_record": {
+        "income": 116794,
+        "city": "Boston"
+      },
+      "missing_field": "age",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"income\": 116794,\n  \"city\": \"Boston\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "age",
+      "rationale": "Given that income is provided and it's a common assumption in demographic analysis, we can infer the missing field as age. However, this is a weak inference.",
+      "uncertainty_description": "High uncertainty due to lack of specific information about the entity."
+    }
+  },
+  {
+    "sample_id": "missing_low_5",
+    "sample": {
+      "id": "missing_low_5",
+      "type": "missing_data",
+      "full_record": {
+        "age": 71,
+        "income": 81644,
+        "city": "Seattle"
+      },
+      "observed_record": {
+        "age": 71,
+        "income": 81644
+      },
+      "missing_field": "city",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 71,\n  \"income\": 81644\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "gender",
+      "rationale": "Based on general demographic trends and the fact that age is provided, it's plausible to infer gender as a missing value.",
+      "uncertainty_description": "This inference is highly uncertain due to the lack of specific information about the individual, such as their name or any other identifying characteristics. Additionally, there are many possible combinations of age and income that could correspond to different genders."
+    }
+  },
+  {
+    "sample_id": "missing_low_6",
+    "sample": {
+      "id": "missing_low_6",
+      "type": "missing_data",
+      "full_record": {
+        "age": 26,
+        "income": 120008,
+        "city": "Chicago"
+      },
+      "observed_record": {
+        "income": 120008,
+        "city": "Chicago"
+      },
+      "missing_field": "age",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"income\": 120008,\n  \"city\": \"Chicago\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "USA",
+      "rationale": "Based on the provided city 'Chicago', it is likely that the entity is from the United States.",
+      "uncertainty_description": "This inference assumes a high degree of certainty, as Chicago is one of the most populous cities in the USA. However, there might be cases where individuals from other countries live or work in Chicago."
+    }
+  },
+  {
+    "sample_id": "missing_low_7",
+    "sample": {
+      "id": "missing_low_7",
+      "type": "missing_data",
+      "full_record": {
+        "age": 53,
+        "income": 71790,
+        "city": "Chicago"
+      },
+      "observed_record": {
+        "age": 53,
+        "income": 71790
+      },
+      "missing_field": "city",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 53,\n  \"income\": 71790\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "gender",
+      "rationale": "Based on demographic data, age is often used to infer gender, but this method has a significant margin of error and should be taken with caution.",
+      "uncertainty_description": "There's a high degree of uncertainty in inferring gender from age alone, as many factors can influence an individual's appearance. This method may not accurately reflect the entity's actual gender."
+    }
+  },
+  {
+    "sample_id": "missing_low_8",
+    "sample": {
+      "id": "missing_low_8",
+      "type": "missing_data",
+      "full_record": {
+        "age": 40,
+        "income": 51485,
+        "city": "Boston"
+      },
+      "observed_record": {
+        "age": 40,
+        "income": 51485
+      },
+      "missing_field": "city",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 40,\n  \"income\": 51485\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "50",
+      "rationale": "Assuming a typical adult age range and using the provided income to infer a plausible age for someone with a moderate income.",
+      "uncertainty_description": "This is a rough estimate based on incomplete data, and actual age may vary significantly."
+    }
+  },
+  {
+    "sample_id": "missing_low_9",
+    "sample": {
+      "id": "missing_low_9",
+      "type": "missing_data",
+      "full_record": {
+        "age": 77,
+        "income": 35187,
+        "city": "Seattle"
+      },
+      "observed_record": {
+        "age": 77,
+        "city": "Seattle"
+      },
+      "missing_field": "income",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 77,\n  \"city\": \"Seattle\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "male",
+      "rationale": "Based on the age of 77, it is more likely that the person is a male in Seattle where the median age is around 37 and life expectancy is high.",
+      "uncertainty_description": "This inference is uncertain as there are many factors that could influence the gender of an individual, such as their personal identity or cultural background."
+    }
+  },
+  {
+    "sample_id": "missing_low_10",
+    "sample": {
+      "id": "missing_low_10",
+      "type": "missing_data",
+      "full_record": {
+        "age": 19,
+        "income": 67266,
+        "city": "Boston"
+      },
+      "observed_record": {
+        "age": 19,
+        "city": "Boston"
+      },
+      "missing_field": "income",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 19,\n  \"city\": \"Boston\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "USA",
+      "rationale": "Based on the given city 'Boston', it is likely that the country of residence is the United States.",
+      "uncertainty_description": "This inference assumes a common association between Boston and the USA, but there might be individuals from other countries living in Boston."
+    }
+  },
+  {
+    "sample_id": "missing_low_11",
+    "sample": {
+      "id": "missing_low_11",
+      "type": "missing_data",
+      "full_record": {
+        "age": 28,
+        "income": 66732,
+        "city": "Chicago"
+      },
+      "observed_record": {
+        "income": 66732,
+        "city": "Chicago"
+      },
+      "missing_field": "age",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"income\": 66732,\n  \"city\": \"Chicago\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "age: 35",
+      "rationale": "Based on US Census data, the median age in Chicago is around 34-35 years old.",
+      "uncertainty_description": "This inference is uncertain due to individual variability and potential biases in census data."
+    }
+  },
+  {
+    "sample_id": "missing_low_12",
+    "sample": {
+      "id": "missing_low_12",
+      "type": "missing_data",
+      "full_record": {
+        "age": 50,
+        "income": 33896,
+        "city": "Boston"
+      },
+      "observed_record": {
+        "age": 50,
+        "income": 33896
+      },
+      "missing_field": "city",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 50,\n  \"income\": 33896\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "unknown",
+      "rationale": "Insufficient data to infer a plausible value for the missing field.",
+      "uncertainty_description": "High uncertainty due to lack of information about the entity."
+    }
+  },
+  {
+    "sample_id": "missing_low_13",
+    "sample": {
+      "id": "missing_low_13",
+      "type": "missing_data",
+      "full_record": {
+        "age": 48,
+        "income": 113069,
+        "city": "Chicago"
+      },
+      "observed_record": {
+        "age": 48,
+        "city": "Chicago"
+      },
+      "missing_field": "income",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 48,\n  \"city\": \"Chicago\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "male",
+      "rationale": "Based on general demographics and assuming a typical age for this city.",
+      "uncertainty_description": "This is a rough estimate, as the actual gender of the person cannot be determined with certainty from the given data."
+    }
+  },
+  {
+    "sample_id": "missing_low_14",
+    "sample": {
+      "id": "missing_low_14",
+      "type": "missing_data",
+      "full_record": {
+        "age": 46,
+        "income": 59108,
+        "city": "Chicago"
+      },
+      "observed_record": {
+        "age": 46,
+        "city": "Chicago"
+      },
+      "missing_field": "income",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 46,\n  \"city\": \"Chicago\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "USA",
+      "rationale": "Based on the provided data, 'Chicago' is a city in the United States of America. Therefore, it's plausible to infer that the entity is from the USA.",
+      "uncertainty_description": "This inference relies on general knowledge about Chicago and its location within the country. However, there might be individuals living in Chicago who are not citizens or residents of the USA."
+    }
+  },
+  {
+    "sample_id": "missing_low_15",
+    "sample": {
+      "id": "missing_low_15",
+      "type": "missing_data",
+      "full_record": {
+        "age": 55,
+        "income": 49015,
+        "city": "Boston"
+      },
+      "observed_record": {
+        "age": 55,
+        "city": "Boston"
+      },
+      "missing_field": "income",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 55,\n  \"city\": \"Boston\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "USA",
+      "rationale": "The city 'Boston' is a well-known city in the United States of America.",
+      "uncertainty_description": "There are other cities named Boston around the world, but based on the given information, it's most plausible that this refers to Boston in the USA."
+    }
+  },
+  {
+    "sample_id": "missing_low_16",
+    "sample": {
+      "id": "missing_low_16",
+      "type": "missing_data",
+      "full_record": {
+        "age": 53,
+        "income": 122094,
+        "city": "Chicago"
+      },
+      "observed_record": {
+        "age": 53,
+        "city": "Chicago"
+      },
+      "missing_field": "income",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 53,\n  \"city\": \"Chicago\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "male",
+      "rationale": "Based on average life expectancy and age distribution in Chicago, it's more likely that the person is a male.",
+      "uncertainty_description": "This inference is uncertain due to the lack of information about the person's gender identity or sex assigned at birth."
+    }
+  },
+  {
+    "sample_id": "missing_low_17",
+    "sample": {
+      "id": "missing_low_17",
+      "type": "missing_data",
+      "full_record": {
+        "age": 31,
+        "income": 75566,
+        "city": "Seattle"
+      },
+      "observed_record": {
+        "income": 75566,
+        "city": "Seattle"
+      },
+      "missing_field": "age",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"income\": 75566,\n  \"city\": \"Seattle\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "USA",
+      "rationale": "Based on the provided city 'Seattle', it is likely that the country of residence is the United States.",
+      "uncertainty_description": "This inference assumes a common association between cities and countries, but may not be accurate for individuals with non-traditional residences or international connections."
+    }
+  },
+  {
+    "sample_id": "missing_low_18",
+    "sample": {
+      "id": "missing_low_18",
+      "type": "missing_data",
+      "full_record": {
+        "age": 70,
+        "income": 41638,
+        "city": "Seattle"
+      },
+      "observed_record": {
+        "income": 41638,
+        "city": "Seattle"
+      },
+      "missing_field": "age",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"income\": 41638,\n  \"city\": \"Seattle\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "USA",
+      "rationale": "Based on the provided city 'Seattle', it is likely that the country of residence is the United States.",
+      "uncertainty_description": "This inference assumes a high degree of certainty, but there might be individuals from other countries living in Seattle. The actual country of residence could be different."
+    }
+  },
+  {
+    "sample_id": "missing_low_19",
+    "sample": {
+      "id": "missing_low_19",
+      "type": "missing_data",
+      "full_record": {
+        "age": 31,
+        "income": 37577,
+        "city": "Chicago"
+      },
+      "observed_record": {
+        "age": 31,
+        "income": 37577
+      },
+      "missing_field": "city",
+      "noise_level": "low"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 31,\n  \"income\": 37577\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "35",
+      "rationale": "Based on average US age at marriage and assuming a married individual, I've inferred the missing field as 35. This is a common age for individuals to get married in the United States.",
+      "uncertainty_description": "This inference is uncertain due to varying cultural norms and individual circumstances."
+    }
+  },
+  {
+    "sample_id": "conflict_high_0",
+    "sample": {
+      "id": "conflict_high_0",
+      "type": "conflicting_sources",
+      "true_value": 23,
+      "sources": {
+        "A": 23,
+        "B": 28,
+        "C": 13
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 23\n- Source B: reported value = 28\n- Source C: reported value = 13\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 23,
+      "rationale": "Source A's reported value of 23 is the most plausible due to its central tendency among the three values. It also does not exhibit extreme outliers like Source B (28) or a significantly lower value like Source C (13).",
+      "uncertainty_description": "There is uncertainty in this decision as it relies on an informal assessment of the data's distribution and lack of information about the sources' reliability, accuracy, or potential biases."
+    }
+  },
+  {
+    "sample_id": "conflict_high_1",
+    "sample": {
+      "id": "conflict_high_1",
+      "type": "conflicting_sources",
+      "true_value": 85,
+      "sources": {
+        "A": 85,
+        "B": 90,
+        "C": 95
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 85\n- Source B: reported value = 90\n- Source C: reported value = 95\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 90,
+      "rationale": "Source B's value is the most plausible because it falls within a reasonable range of values (85-95) and is closer to the average of all reported values (90). Additionally, there is no obvious reason why Source A or C would be more accurate than Source B.",
+      "uncertainty_description": "There may be biases in each source's reporting method, data collection process, or interpretation. Without further information about the sources' methodologies and potential limitations, it is difficult to assign a high degree of confidence to any single value."
+    }
+  },
+  {
+    "sample_id": "conflict_high_2",
+    "sample": {
+      "id": "conflict_high_2",
+      "type": "conflicting_sources",
+      "true_value": 92,
+      "sources": {
+        "A": 92,
+        "B": 92,
+        "C": 92
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 92\n- Source B: reported value = 92\n- Source C: reported value = 92\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 92,
+      "rationale": "All sources report the same value, which suggests consistency across data sources. However, without further information about the reliability and credibility of each source, it's difficult to determine if this is an accurate or biased representation.",
+      "uncertainty_description": "There is uncertainty due to the lack of diversity in reported values and limited information about the sources' reliability and credibility."
+    }
+  },
+  {
+    "sample_id": "conflict_high_3",
+    "sample": {
+      "id": "conflict_high_3",
+      "type": "conflicting_sources",
+      "true_value": 29,
+      "sources": {
+        "A": 29,
+        "B": 34,
+        "C": 39
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 29\n- Source B: reported value = 34\n- Source C: reported value = 39\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 34,
+      "rationale": "Source B's reported value of 34 is the most plausible because it falls within a reasonable range between Source A's and Source C's values. Additionally, there is no clear reason to believe that one source is more reliable than the others.",
+      "uncertainty_description": "There is uncertainty in this decision due to the lack of information about the sources' reliability, methodology, or context. It is possible that Source B's value may be influenced by biases or errors, and further investigation would be necessary to confirm its accuracy."
+    }
+  },
+  {
+    "sample_id": "conflict_high_4",
+    "sample": {
+      "id": "conflict_high_4",
+      "type": "conflicting_sources",
+      "true_value": 15,
+      "sources": {
+        "A": 15,
+        "B": 20,
+        "C": 15
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 15\n- Source B: reported value = 20\n- Source C: reported value = 15\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 15,
+      "rationale": "The most plausible value is the one reported by two sources (Source A and Source C), which is consistent. This suggests that there may be a reliable source of information for this entity.",
+      "uncertainty_description": "There is uncertainty about the accuracy of the values reported by each source, as they are not identical. Additionally, the value reported by Source B (20) deviates significantly from the other two sources, which could indicate an error or inaccuracy."
+    }
+  },
+  {
+    "sample_id": "conflict_high_5",
+    "sample": {
+      "id": "conflict_high_5",
+      "type": "conflicting_sources",
+      "true_value": 57,
+      "sources": {
+        "A": 57,
+        "B": 52,
+        "C": 47
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 57\n- Source B: reported value = 52\n- Source C: reported value = 47\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 52,
+      "rationale": "Source B's reported value of 52 is the closest to the average of all three sources (56). This suggests that Source B may be more accurate or reliable.",
+      "uncertainty_description": "There is uncertainty in this decision as it relies on a subjective assessment of the data. Additionally, without further information about the sources, such as their methodologies or credibility, it's difficult to make an entirely confident choice."
+    }
+  },
+  {
+    "sample_id": "conflict_high_6",
+    "sample": {
+      "id": "conflict_high_6",
+      "type": "conflicting_sources",
+      "true_value": 93,
+      "sources": {
+        "A": 93,
+        "B": 93,
+        "C": 83
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 93\n- Source B: reported value = 93\n- Source C: reported value = 83\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 93,
+      "rationale": "Both Source A and Source B report the same value, which suggests consistency. This is more reliable than a single outlier (Source C).",
+      "uncertainty_description": "There may be an error in Source C's reporting or it could be a genuine discrepancy. Further investigation would be needed to determine the cause of this difference."
+    }
+  },
+  {
+    "sample_id": "conflict_high_7",
+    "sample": {
+      "id": "conflict_high_7",
+      "type": "conflicting_sources",
+      "true_value": 15,
+      "sources": {
+        "A": 15,
+        "B": 20,
+        "C": 25
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 15\n- Source B: reported value = 20\n- Source C: reported value = 25\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 20,
+      "rationale": "Source B's value of 20 is the most plausible because it is closer to the average of the three sources (20). Additionally, there is no obvious reason why one source should be significantly more accurate than the others.",
+      "uncertainty_description": "There is a high degree of uncertainty in this decision as all sources have different reported values. Without further information about the reliability or methodology of each source, it is difficult to determine which value is most accurate."
+    }
+  },
+  {
+    "sample_id": "conflict_high_8",
+    "sample": {
+      "id": "conflict_high_8",
+      "type": "conflicting_sources",
+      "true_value": 77,
+      "sources": {
+        "A": 77,
+        "B": 72,
+        "C": 77
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 77\n- Source B: reported value = 72\n- Source C: reported value = 77\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 77,
+      "rationale": "The chosen value is the one that appears most consistently across multiple sources (Source A and Source C). This suggests a high level of agreement among the data providers, making it more plausible.",
+      "uncertainty_description": "There is some uncertainty in this decision due to the conflicting report from Source B. However, without further information about the reliability or credibility of each source, we cannot definitively rule out any value."
+    }
+  },
+  {
+    "sample_id": "conflict_high_9",
+    "sample": {
+      "id": "conflict_high_9",
+      "type": "conflicting_sources",
+      "true_value": 64,
+      "sources": {
+        "A": 64,
+        "B": 69,
+        "C": 74
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 64\n- Source B: reported value = 69\n- Source C: reported value = 74\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 69,
+      "rationale": "The chosen value is the reported value from Source B, which falls within a reasonable range of the other values. It's also closer to the average of all three values (73.67).",
+      "uncertainty_description": "There is uncertainty in this decision due to the potential for measurement errors or biases in each source. Additionally, there may be unknown factors that could affect the accuracy of these reported values."
+    }
+  },
+  {
+    "sample_id": "conflict_high_10",
+    "sample": {
+      "id": "conflict_high_10",
+      "type": "conflicting_sources",
+      "true_value": 86,
+      "sources": {
+        "A": 86,
+        "B": 86,
+        "C": 76
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 86\n- Source B: reported value = 86\n- Source C: reported value = 76\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 86,
+      "rationale": "Both Source A and Source B report the same value of 86, which suggests consistency. This is a strong indicator that this value might be accurate.",
+      "uncertainty_description": "However, there is uncertainty because Source C reports a significantly different value of 76. This discrepancy could indicate an error in one or both sources."
+    }
+  },
+  {
+    "sample_id": "conflict_high_11",
+    "sample": {
+      "id": "conflict_high_11",
+      "type": "conflicting_sources",
+      "true_value": 19,
+      "sources": {
+        "A": 19,
+        "B": 24,
+        "C": 19
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 19\n- Source B: reported value = 24\n- Source C: reported value = 19\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 19,
+      "rationale": "The most plausible value is the one reported by Source A and Source C, which are consistent with each other. This consistency suggests that these values may be more accurate than the value reported by Source B.",
+      "uncertainty_description": "There is uncertainty in this decision because it's based on a subjective analysis of the data sources. Additionally, there could be unknown biases or errors in any of the sources that are not accounted for here."
+    }
+  },
+  {
+    "sample_id": "conflict_high_12",
+    "sample": {
+      "id": "conflict_high_12",
+      "type": "conflicting_sources",
+      "true_value": 93,
+      "sources": {
+        "A": 93,
+        "B": 98,
+        "C": 93
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 93\n- Source B: reported value = 98\n- Source C: reported value = 93\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 93,
+      "rationale": "The value of 93 is reported by two sources (Source A and Source C), which suggests a higher level of agreement among the data sources. Although Source B reports a value of 98, it only has one report, making it less reliable compared to the two reports of 93.",
+      "uncertainty_description": "There is uncertainty in this decision due to the possibility that Source A or Source C may have reported an incorrect value. Additionally, there could be other unreported values from different sources that might be more accurate."
+    }
+  },
+  {
+    "sample_id": "conflict_high_13",
+    "sample": {
+      "id": "conflict_high_13",
+      "type": "conflicting_sources",
+      "true_value": 29,
+      "sources": {
+        "A": 29,
+        "B": 29,
+        "C": 39
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 29\n- Source B: reported value = 29\n- Source C: reported value = 39\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 29,
+      "rationale": "The values from Source A and Source B are consistent, while the value from Source C is significantly higher. Without further information about the sources or their methodologies, it's reasonable to assume that the values from Sources A and B are more reliable.",
+      "uncertainty_description": "There may be biases in the reporting of values from Sources A and B, or there could be an error in the value reported by Source C. Additionally, without knowing the sample size or methodology used by each source, it's difficult to make a definitive conclusion."
+    }
+  },
+  {
+    "sample_id": "conflict_high_14",
+    "sample": {
+      "id": "conflict_high_14",
+      "type": "conflicting_sources",
+      "true_value": 59,
+      "sources": {
+        "A": 59,
+        "B": 59,
+        "C": 49
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 59\n- Source B: reported value = 59\n- Source C: reported value = 49\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 59,
+      "rationale": "Both Source A and Source B report the same value of 59, which suggests consistency. In contrast, Source C reports a significantly lower value of 49, which may indicate an error or inaccuracy.",
+      "uncertainty_description": "There is uncertainty due to the conflicting values reported by different sources. However, given the consistency between Source A and Source B, it is reasonable to consider their value as more plausible."
+    }
+  },
+  {
+    "sample_id": "conflict_high_15",
+    "sample": {
+      "id": "conflict_high_15",
+      "type": "conflicting_sources",
+      "true_value": 41,
+      "sources": {
+        "A": 41,
+        "B": 41,
+        "C": 31
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 41\n- Source B: reported value = 41\n- Source C: reported value = 31\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 41,
+      "rationale": "Both Source A and Source B report the same value, which suggests consistency. This is a strong indicator of accuracy. In contrast, Source C reports a significantly different value (31), which may be an outlier or an error.",
+      "uncertainty_description": "There is uncertainty in this decision due to the presence of conflicting data points. However, based on the principle of Occam's Razor, I have chosen the value that is reported consistently by multiple sources."
+    }
+  },
+  {
+    "sample_id": "conflict_high_16",
+    "sample": {
+      "id": "conflict_high_16",
+      "type": "conflicting_sources",
+      "true_value": 66,
+      "sources": {
+        "A": 66,
+        "B": 71,
+        "C": 66
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 66\n- Source B: reported value = 71\n- Source C: reported value = 66\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 71,
+      "rationale": "Source B's value is the most plausible because it has a unique reported value (71) that does not match Source A or C. This suggests that Source B may have used a different method or data source, which could increase its accuracy.",
+      "uncertainty_description": "There is uncertainty in this decision due to the possibility of errors in any of the sources. However, without further information about the reliability and methodology of each source, it is difficult to determine the true value with certainty."
+    }
+  },
+  {
+    "sample_id": "conflict_high_17",
+    "sample": {
+      "id": "conflict_high_17",
+      "type": "conflicting_sources",
+      "true_value": 10,
+      "sources": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 10\n- Source B: reported value = 5\n- Source C: reported value = 0\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 10,
+      "rationale": "Source A's reported value of 10 is more plausible because it is a higher number, which suggests that the entity has some inherent value or significance. Sources B and C report lower values (5 and 0 respectively), which could be indicative of errors or biases in their data collection methods.",
+      "uncertainty_description": "There is uncertainty in this decision due to the conflicting information from multiple sources. However, based on general assumptions about the nature of entities, a higher reported value is often more plausible than lower values."
+    }
+  },
+  {
+    "sample_id": "conflict_high_18",
+    "sample": {
+      "id": "conflict_high_18",
+      "type": "conflicting_sources",
+      "true_value": 57,
+      "sources": {
+        "A": 57,
+        "B": 62,
+        "C": 67
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 57\n- Source B: reported value = 62\n- Source C: reported value = 67\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 62,
+      "rationale": "The chosen value is the average of Source A and Source C, which suggests a possible error or bias in one of these sources. However, it's also close to the reported value from Source B.",
+      "uncertainty_description": "There is uncertainty due to conflicting values across different sources. The most plausible value may still be subject to some degree of error or bias."
+    }
+  },
+  {
+    "sample_id": "conflict_high_19",
+    "sample": {
+      "id": "conflict_high_19",
+      "type": "conflicting_sources",
+      "true_value": 46,
+      "sources": {
+        "A": 46,
+        "B": 51,
+        "C": 36
+      },
+      "noise_level": "high"
+    },
+    "prompt": "You are given multiple data sources about the same entity.\n\nSources:\n- Source A: reported value = 46\n- Source B: reported value = 51\n- Source C: reported value = 36\n\nTask:\n1. Decide which value is most plausible.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"",
+    "model_output": {
+      "chosen_value": 46,
+      "rationale": "Source A's value is the most plausible because it falls within a reasonable range of values (36 and 51) and is closer to the average of all reported values. Additionally, there is no clear reason why Source A's value should be less accurate than the others.",
+      "uncertainty_description": "There is uncertainty in this decision due to the lack of information about the sources' reliability, methodology, and potential biases. It is possible that one or more sources may have been misinformed or made an error."
+    }
+  },
+  {
+    "sample_id": "missing_high_0",
+    "sample": {
+      "id": "missing_high_0",
+      "type": "missing_data",
+      "full_record": {
+        "age": 73,
+        "income": 124230,
+        "city": "Seattle"
+      },
+      "observed_record": {
+        "income": 124230,
+        "city": "Seattle"
+      },
+      "missing_field": "age",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"income\": 124230,\n  \"city\": \"Seattle\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "USA",
+      "rationale": "Based on the provided city 'Seattle', it is likely that the country of residence is the United States.",
+      "uncertainty_description": "This inference assumes that Seattle is a major city in the USA and does not account for potential international residents or expats."
+    }
+  },
+  {
+    "sample_id": "missing_high_1",
+    "sample": {
+      "id": "missing_high_1",
+      "type": "missing_data",
+      "full_record": {
+        "age": 76,
+        "income": 92210,
+        "city": "Boston"
+      },
+      "observed_record": {
+        "age": 76,
+        "income": 92210
+      },
+      "missing_field": "city",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 76,\n  \"income\": 92210\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "gender",
+      "rationale": "Based on general demographic trends and the provided age (76), it is plausible that the individual is a senior citizen, which could imply they are more likely to be female.",
+      "uncertainty_description": "This inference is highly uncertain due to the lack of specific information about the entity's gender. The assumption made here may not hold true for all individuals with similar characteristics."
+    }
+  },
+  {
+    "sample_id": "missing_high_2",
+    "sample": {
+      "id": "missing_high_2",
+      "type": "missing_data",
+      "full_record": {
+        "age": 34,
+        "income": 30407,
+        "city": "Seattle"
+      },
+      "observed_record": {
+        "age": 34,
+        "income": 30407
+      },
+      "missing_field": "city",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 34,\n  \"income\": 30407\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "unknown",
+      "rationale": "Insufficient data to infer a plausible value for the missing field.",
+      "uncertainty_description": "The available fields (age and income) do not provide enough information to make an educated guess about the missing field."
+    }
+  },
+  {
+    "sample_id": "missing_high_3",
+    "sample": {
+      "id": "missing_high_3",
+      "type": "missing_data",
+      "full_record": {
+        "age": 34,
+        "income": 67748,
+        "city": "Chicago"
+      },
+      "observed_record": {
+        "income": 67748,
+        "city": "Chicago"
+      },
+      "missing_field": "age",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"income\": 67748,\n  \"city\": \"Chicago\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "31-50",
+      "rationale": "Based on US Census data, Chicago has a median age range of approximately 30-40 years old.",
+      "uncertainty_description": "This inference is based on general demographic trends and may not reflect the actual age of this individual."
+    }
+  },
+  {
+    "sample_id": "missing_high_4",
+    "sample": {
+      "id": "missing_high_4",
+      "type": "missing_data",
+      "full_record": {
+        "age": 46,
+        "income": 35636,
+        "city": "Boston"
+      },
+      "observed_record": {
+        "age": 46,
+        "city": "Boston"
+      },
+      "missing_field": "income",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 46,\n  \"city\": \"Boston\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "male",
+      "rationale": "Based on average age and city demographics, it is more likely that a 46-year-old person living in Boston is male.",
+      "uncertainty_description": "This inference is uncertain due to the lack of information about the entity's gender. The assumption made here may not hold true for all individuals."
+    }
+  },
+  {
+    "sample_id": "missing_high_5",
+    "sample": {
+      "id": "missing_high_5",
+      "type": "missing_data",
+      "full_record": {
+        "age": 57,
+        "income": 31224,
+        "city": "Seattle"
+      },
+      "observed_record": {
+        "age": 57,
+        "city": "Seattle"
+      },
+      "missing_field": "income",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 57,\n  \"city\": \"Seattle\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "male",
+      "rationale": "Based on US demographics, males are more likely to live longer than females, and the age of 57 is within a common lifespan range for males.",
+      "uncertainty_description": "This inference assumes typical demographic patterns in Seattle, but may not reflect individual circumstances or specific subpopulations."
+    }
+  },
+  {
+    "sample_id": "missing_high_6",
+    "sample": {
+      "id": "missing_high_6",
+      "type": "missing_data",
+      "full_record": {
+        "age": 39,
+        "income": 127226,
+        "city": "Chicago"
+      },
+      "observed_record": {
+        "age": 39,
+        "city": "Chicago"
+      },
+      "missing_field": "income",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 39,\n  \"city\": \"Chicago\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "male",
+      "rationale": "Based on the average age and life expectancy in Chicago, it is more likely that a 39-year-old person is male.",
+      "uncertainty_description": "This inference is uncertain due to various factors such as cultural background, lifestyle, and personal choices."
+    }
+  },
+  {
+    "sample_id": "missing_high_7",
+    "sample": {
+      "id": "missing_high_7",
+      "type": "missing_data",
+      "full_record": {
+        "age": 61,
+        "income": 50205,
+        "city": "Seattle"
+      },
+      "observed_record": {
+        "income": 50205,
+        "city": "Seattle"
+      },
+      "missing_field": "age",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"income\": 50205,\n  \"city\": \"Seattle\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "USA",
+      "rationale": "Based on the known city 'Seattle', it is likely that the country of residence is the United States.",
+      "uncertainty_description": "There are other cities with the same name in different countries, so there is some uncertainty about this inference."
+    }
+  },
+  {
+    "sample_id": "missing_high_8",
+    "sample": {
+      "id": "missing_high_8",
+      "type": "missing_data",
+      "full_record": {
+        "age": 78,
+        "income": 80206,
+        "city": "Chicago"
+      },
+      "observed_record": {
+        "income": 80206,
+        "city": "Chicago"
+      },
+      "missing_field": "age",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"income\": 80206,\n  \"city\": \"Chicago\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "USA",
+      "rationale": "Based on the provided city 'Chicago', it is highly likely that the entity is from the United States.",
+      "uncertainty_description": "There could be a small chance of the entity being from another country with a similar city name, but this is extremely unlikely."
+    }
+  },
+  {
+    "sample_id": "missing_high_9",
+    "sample": {
+      "id": "missing_high_9",
+      "type": "missing_data",
+      "full_record": {
+        "age": 49,
+        "income": 46847,
+        "city": "Boston"
+      },
+      "observed_record": {
+        "income": 46847,
+        "city": "Boston"
+      },
+      "missing_field": "age",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"income\": 46847,\n  \"city\": \"Boston\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "age: 35",
+      "rationale": "Based on national averages and assuming a typical household income for Boston, I inferred the age to be around 35. This is because the median household income in Boston is around $83,000, but the provided income is lower, suggesting a younger household.",
+      "uncertainty_description": "This inference is uncertain as it relies on national averages and does not take into account individual circumstances."
+    }
+  },
+  {
+    "sample_id": "missing_high_10",
+    "sample": {
+      "id": "missing_high_10",
+      "type": "missing_data",
+      "full_record": {
+        "age": 61,
+        "income": 106105,
+        "city": "Seattle"
+      },
+      "observed_record": {
+        "age": 61,
+        "income": 106105
+      },
+      "missing_field": "city",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 61,\n  \"income\": 106105\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "gender",
+      "rationale": "Based on demographic data, age is often used to infer gender, but this method has a high margin of error and should be taken with caution.",
+      "uncertainty_description": "High uncertainty due to the imprecise nature of age-based gender inference."
+    }
+  },
+  {
+    "sample_id": "missing_high_11",
+    "sample": {
+      "id": "missing_high_11",
+      "type": "missing_data",
+      "full_record": {
+        "age": 67,
+        "income": 34550,
+        "city": "Chicago"
+      },
+      "observed_record": {
+        "age": 67,
+        "income": 34550
+      },
+      "missing_field": "city",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 67,\n  \"income\": 34550\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "unknown",
+      "rationale": "Insufficient data to infer a plausible value for the missing field.",
+      "uncertainty_description": "High uncertainty due to lack of information about the entity."
+    }
+  },
+  {
+    "sample_id": "missing_high_12",
+    "sample": {
+      "id": "missing_high_12",
+      "type": "missing_data",
+      "full_record": {
+        "age": 29,
+        "income": 122397,
+        "city": "Seattle"
+      },
+      "observed_record": {
+        "income": 122397,
+        "city": "Seattle"
+      },
+      "missing_field": "age",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"income\": 122397,\n  \"city\": \"Seattle\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "USA",
+      "rationale": "The city 'Seattle' is a well-known city in the United States, and it's likely that this entity is from the USA.",
+      "uncertainty_description": "There could be other possible countries where Seattle is located, such as Canada. However, based on general knowledge, the most plausible answer is the USA."
+    }
+  },
+  {
+    "sample_id": "missing_high_13",
+    "sample": {
+      "id": "missing_high_13",
+      "type": "missing_data",
+      "full_record": {
+        "age": 66,
+        "income": 125408,
+        "city": "Chicago"
+      },
+      "observed_record": {
+        "income": 125408,
+        "city": "Chicago"
+      },
+      "missing_field": "age",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"income\": 125408,\n  \"city\": \"Chicago\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "USA",
+      "rationale": "Based on the provided city 'Chicago', it is reasonable to infer that the entity is from the United States.",
+      "uncertainty_description": "This inference assumes that Chicago is a major city in the USA and does not account for other possible locations with the same name."
+    }
+  },
+  {
+    "sample_id": "missing_high_14",
+    "sample": {
+      "id": "missing_high_14",
+      "type": "missing_data",
+      "full_record": {
+        "age": 57,
+        "income": 149499,
+        "city": "Boston"
+      },
+      "observed_record": {
+        "income": 149499,
+        "city": "Boston"
+      },
+      "missing_field": "age",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"income\": 149499,\n  \"city\": \"Boston\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "USA",
+      "rationale": "Based on the provided city 'Boston', it is likely that the entity is from the United States.",
+      "uncertainty_description": "This inference assumes Boston refers to Boston, Massachusetts, USA, and does not account for other cities with similar names in different countries."
+    }
+  },
+  {
+    "sample_id": "missing_high_15",
+    "sample": {
+      "id": "missing_high_15",
+      "type": "missing_data",
+      "full_record": {
+        "age": 54,
+        "income": 135058,
+        "city": "Boston"
+      },
+      "observed_record": {
+        "age": 54,
+        "city": "Boston"
+      },
+      "missing_field": "income",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 54,\n  \"city\": \"Boston\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "male",
+      "rationale": "Based on the average age and life expectancy in Boston, it is more likely that a 54-year-old person is male.",
+      "uncertainty_description": "This inference is uncertain as there are many factors that could influence an individual's gender, such as their personal identity or cultural background."
+    }
+  },
+  {
+    "sample_id": "missing_high_16",
+    "sample": {
+      "id": "missing_high_16",
+      "type": "missing_data",
+      "full_record": {
+        "age": 45,
+        "income": 95561,
+        "city": "Boston"
+      },
+      "observed_record": {
+        "age": 45,
+        "income": 95561
+      },
+      "missing_field": "city",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 45,\n  \"income\": 95561\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "50",
+      "rationale": "Based on the provided age of 45 and assuming a typical adult lifespan, I inferred a plausible value for the missing field 'height'. However, this is highly uncertain as there's no direct correlation between income and height.",
+      "uncertainty_description": "High uncertainty due to lack of relevant data and indirect inference."
+    }
+  },
+  {
+    "sample_id": "missing_high_17",
+    "sample": {
+      "id": "missing_high_17",
+      "type": "missing_data",
+      "full_record": {
+        "age": 53,
+        "income": 142291,
+        "city": "Seattle"
+      },
+      "observed_record": {
+        "age": 53,
+        "city": "Seattle"
+      },
+      "missing_field": "income",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"age\": 53,\n  \"city\": \"Seattle\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "male",
+      "rationale": "Based on the average age and population distribution in Seattle, it is more likely that a 53-year-old person is male.",
+      "uncertainty_description": "This inference is uncertain due to various factors such as changing demographics and individual circumstances."
+    }
+  },
+  {
+    "sample_id": "missing_high_18",
+    "sample": {
+      "id": "missing_high_18",
+      "type": "missing_data",
+      "full_record": {
+        "age": 67,
+        "income": 132406,
+        "city": "Boston"
+      },
+      "observed_record": {
+        "income": 132406,
+        "city": "Boston"
+      },
+      "missing_field": "age",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"income\": 132406,\n  \"city\": \"Boston\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "USA",
+      "rationale": "The city 'Boston' is a well-known city in the United States of America.",
+      "uncertainty_description": "There are other countries with cities named Boston, but based on the given information, it's most plausible that this refers to the US city."
+    }
+  },
+  {
+    "sample_id": "missing_high_19",
+    "sample": {
+      "id": "missing_high_19",
+      "type": "missing_data",
+      "full_record": {
+        "age": 70,
+        "income": 99813,
+        "city": "Seattle"
+      },
+      "observed_record": {
+        "income": 99813,
+        "city": "Seattle"
+      },
+      "missing_field": "age",
+      "noise_level": "high"
+    },
+    "prompt": "You are given partial or incomplete data about an entity.\n\nKnown fields:\n{\n  \"income\": 99813,\n  \"city\": \"Seattle\"\n}\n\nTask:\n1. Infer the most plausible value for the missing field.\n2. Explain your reasoning.\n3. Explicitly state any uncertainty.\n\nReturn your answer in JSON with fields:\n- \"chosen_value\"\n- \"rationale\"\n- \"uncertainty_description\"\n\nYou MUST return ONLY valid JSON.\nNo explanations.\nNo markdown.\nNo text outside the JSON object.\n\nYour response MUST match this exact schema:\n\n{\n  \"chosen_value\": \"<string>\",\n  \"rationale\": \"<string>\",\n  \"uncertainty_description\": \"<string>\"\n}\n\nIf you cannot determine the answer, still fill all fields with text.\nDo NOT leave any field empty.\nDo NOT output an empty string.\nDo NOT output null.",
+    "model_output": {
+      "chosen_value": "USA",
+      "rationale": "Based on the provided city 'Seattle', it is likely that the country of residence is the United States.",
+      "uncertainty_description": "This inference assumes a high degree of correlation between city and country, which may not always be accurate. There could be individuals living in Seattle who are citizens of other countries."
+    }
+  }
+]
