@@ -1,0 +1,13 @@
+langchain>=1.0
+langchain-community
+langchain-text-splitters
+scikit-learn
+faiss-cpu
+openai
+
+# Note: this project uses a TF-IDF fallback for embeddings (see
+# src/build_index.py docstring for why). For a production-quality
+# embedding model, also install:
+#   langchain-huggingface
+#   sentence-transformers
+# and swap TfidfEmbeddings for HuggingFaceEmbeddings in build_index.py.

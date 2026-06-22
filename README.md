@@ -1,157 +1,74 @@
-# LLM Reliability Under Noisy, Multi-Source Data
+# LLM Reliability and Retrieval-Augmented Generation
 
-## Overview
-
-Real-world data is rarely clean or consistent. In many applied settings, information is incomplete, conflicting, or contains irrelevant signals. While large language models (LLMs) perform well on structured benchmarks, their behavior under these more realistic conditions is less well understood.
-
-This project evaluates how LLMs respond to noisy, multi-source inputs, with a focus on identifying failure modes related to hallucination, overconfidence, and sensitivity to irrelevant or conflicting information.
-
-The goal is to better understand how LLMs behave in conditions that more closely resemble real-world data environments.
+This project investigates two related but distinct aspects of working
+with large language models in applied settings: how reliably they
+reason over noisy or incomplete information (**Part A**), and how
+retrieval grounding can be used to reduce hallucination and anchor
+answers in real source documents (**Part B**).
 
 ---
 
-## Research Questions
+## Part A: LLM Reliability Under Noisy, Multi-Source Data
 
-This project explores the following questions:
+**Location:** `llm_evaluation/`
 
-- How do LLMs handle conflicting information across multiple sources?
-- What happens when inputs contain missing or incomplete data?
-- Are LLMs sensitive to irrelevant or misleading features?
-- Do models exhibit overconfidence under uncertainty?
-- When do models hallucinate or fabricate information to fill gaps?
+This is an evaluation harness that tests how an LLM behaves when given
+conflicting information from multiple sources, or records with missing
+fields. It measures whether the model resolves conflicts correctly,
+whether it appropriately expresses uncertainty rather than guessing, and
+analyzes qualitative patterns in hallucination and overconfidence.
 
----
+Note: this is direct LLM prompting and evaluation -- it does not use
+retrieval or a vector database. See Part B below for the retrieval
+component.
 
-## Approach
-
-To study these behaviors, I construct synthetic but realistic datasets that simulate common issues in real-world data pipelines:
-
-- Multiple sources with conflicting values  
-- Missing or null fields  
-- Irrelevant or noisy features  
-- Slightly misleading context or framing  
-
-These datasets are paired with structured prompts and evaluated using a combination of qualitative analysis and simple quantitative metrics.
-
-The evaluation pipeline includes:
-
-1. Generating noisy, multi-source inputs  
-2. Prompting an LLM to perform reasoning or estimation tasks  
-3. Capturing model outputs and reasoning patterns  
-4. Analyzing correctness, consistency, and confidence  
+See `llm_evaluation/README.md` for full details, research questions, and
+how to run it.
 
 ---
 
-## Repository Structure
+## Part B: RAG Pipeline over Annuity Product Documents
 
-```text
-llm_evaluation/
-|
-+-- config/
-|   +-- config.yaml
-|
-+-- data/
-|   +-- raw/
-|   +-- processed/
-|
-+-- notebooks/
-|   +-- exploratory_analysis.ipynb
-|
-+-- prompts/
-|   +-- base_prompts.txt
-|   +-- adversarial_prompts.txt
-|
-+-- results/
-|   +-- outputs.json
-|   +-- summary.md
-|
-+-- src/
-|   +-- generate_data.py
-|   +-- run_evaluation.py
-|   +-- metrics.py
-|   +-- utils.py
-|
-+-- README.md
-+-- requirements.txt
-```
+**Location:** `rag_pipeline/`
+
+A complete retrieval-augmented generation pipeline built over a set of
+illustrative insurance/annuity reference documents. This project was
+built to gain direct, hands-on experience with retrieval-augmented
+generation, vector embeddings, and LangChain after completing coursework
+in the area -- the goal was to build and understand a working pipeline
+end to end, rather than only completing tutorial exercises.
+
+It covers the full RAG flow: document chunking, embedding, vector
+storage (FAISS), semantic retrieval, and grounded LLM generation, with
+the reasoning behind each design decision documented directly in the
+code. It also includes a worked demonstration of a real embedding
+limitation (TF-IDF vs. neural embeddings) encountered while building it,
+documented in `rag_pipeline/src/build_index.py`.
+
+See `rag_pipeline/README.md` for full details, structure, and how to
+run it.
 
 ---
 
-## Key Experiments
+## How Part A and Part B relate
 
-### 1. Conflicting Sources
-Evaluate how models reconcile multiple sources that provide different answers.
-
-### 2. Missing Data
-Test whether models acknowledge uncertainty or fabricate missing information.
-
-### 3. Irrelevant Features
-Introduce distracting or unrelated variables to test robustness.
-
----
-
-## Preliminary Observations
-
-(*To be updated as experiments are completed*)
-
-Early results suggest that:
-
-- Models may overweight a single source, even when multiple are provided  
-- Models often fail to explicitly represent uncertainty when data is incomplete  
-- Irrelevant features can sometimes influence outputs in non-obvious ways  
-- Outputs may remain confident even when underlying data is ambiguous or conflicting  
-
----
-
-## Why This Matters
-
-Many real-world AI applications involve:
-
-- Integrating multiple data sources  
-- Reasoning under uncertainty  
-- Making decisions with incomplete information  
-
-Understanding how LLMs behave in these conditions is important for:
-
-- Improving model reliability and robustness  
-- Designing better evaluation frameworks  
-- Informing safer deployment of AI systems  
-
----
-
-## How to Run
-
-1. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. Generate synthetic data:
-
-   ```bash
-   python src/generate_data.py
-   ```
-
-3. Run evaluation:
-
-   ```bash
-   python src/run_evaluation.py
-   ```
-
-4. Analyze results:
-
-   - Open `notebooks/exploratory_analysis.ipynb`
-   - Review `results/summary.md`
-
----
+Both parts are ultimately about the same underlying question: how do we
+get trustworthy, well-grounded answers out of an LLM rather than
+plausible-sounding but unverified ones? Part A studies failure modes in
+unconstrained reasoning over messy data. Part B is one concrete mitigation
+strategy -- grounding generation in retrieved, citable source text -- and
+demonstrates that mitigation hands-on.
 
 ## Future Work
 
-- Expand evaluation to additional model families  
-- Develop more formal metrics for uncertainty and confidence  
-- Explore mitigation strategies for identified failure modes  
-- Extend to real-world datasets with known inconsistencies  
+- Apply the Part A evaluation methodology (conflict resolution,
+  uncertainty expression, hallucination detection) directly to the Part B
+  RAG pipeline's outputs, to measure whether grounding actually reduces
+  the failure rates observed in Part A.
+- Swap the Part B fallback TF-IDF embeddings for a neural embedding model
+  and compare retrieval quality.
+- Expand both components to additional model families and larger,
+  more realistic datasets.
 
 ---
 

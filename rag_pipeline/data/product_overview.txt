@@ -1,0 +1,64 @@
+VARIABLE ANNUITY PRODUCT OVERVIEW (Illustrative Example)
+
+A variable annuity is a contract between a policyholder and an insurance
+company. The policyholder makes one or more purchase payments, and the
+insurance company agrees to make periodic payments back to the policyholder
+beginning either immediately or at a future date.
+
+During the accumulation phase, purchase payments are allocated among a
+selection of investment sub-accounts. The value of the contract fluctuates
+based on the performance of the underlying investment options chosen by the
+policyholder. Unlike a fixed annuity, a variable annuity does not guarantee
+a specific rate of return during the accumulation phase.
+
+Key contract features typically include:
+
+1. Accumulation Phase: The period during which purchase payments are made
+   and the contract value grows or declines based on investment performance.
+
+2. Annuitization Phase: The period during which the insurance company makes
+   periodic payments to the policyholder, based on the accumulated contract
+   value, the policyholder's age, and the payout option selected.
+
+3. Death Benefit: Most variable annuity contracts include a standard death
+   benefit, which guarantees that a beneficiary will receive at least the
+   amount of purchase payments made, reduced proportionally for any
+   withdrawals, even if the contract value has declined due to poor
+   investment performance.
+
+4. Optional Riders: Policyholders may elect to add optional riders for an
+   additional fee, such as a Guaranteed Minimum Income Benefit (GMIB) or a
+   Guaranteed Minimum Withdrawal Benefit (GMWB). These riders provide
+   additional guarantees beyond the standard contract terms but increase
+   the overall cost of the product.
+
+5. Free Look Period: Most states require a free look period, typically
+   between 10 and 30 days depending on the state of issue, during which the
+   policyholder may cancel the contract and receive a full refund of
+   purchase payments, or in some cases the contract value if it differs
+   from purchase payments.
+
+Fees and Charges
+
+Variable annuities typically involve several layers of fees:
+
+- Mortality and Expense Risk (M&E) Charge: Compensates the insurer for the
+  insurance guarantees provided under the contract, typically expressed as
+  an annual percentage of contract value (commonly in the range of
+  1.00% to 1.50%).
+
+- Administrative Fee: Covers recordkeeping and administrative costs,
+  either as a flat annual fee or a small percentage of contract value.
+
+- Underlying Fund Expenses: Fees charged by the investment sub-accounts
+  themselves, similar to mutual fund expense ratios.
+
+- Rider Fees: Additional charges for optional benefits, typically
+  expressed as a percentage of either contract value or a separate
+  "benefit base" used to calculate guaranteed amounts.
+
+- Surrender Charges: See the Surrender Charge Schedule document for
+  details on withdrawal charges during the surrender charge period.
+
+This document is an illustrative summary for training and demonstration
+purposes and does not represent the terms of any actual insurance product.

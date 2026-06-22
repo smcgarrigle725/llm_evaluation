@@ -2,8 +2,8 @@ import json
 from pathlib import Path
 
 from openai import OpenAI
-from utils import load_yaml, ensure_dir
-from metrics import compute_accuracy, summarize_uncertainty_language
+from llm_evaluation.src.utils import load_yaml, ensure_dir
+from llm_evaluation.src.metrics import compute_accuracy, summarize_uncertainty_language
 
 
 def llm_call(prompt: str, config: dict) -> dict:

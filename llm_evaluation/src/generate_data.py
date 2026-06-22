@@ -2,7 +2,7 @@ import json
 import random
 from pathlib import Path
 
-from utils import load_yaml, ensure_dir
+from llm_evaluation.src.utils import load_yaml, ensure_dir
 
 
 def generate_conflicting_sources(n: int, noise_level: str):

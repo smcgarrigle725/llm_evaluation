@@ -1,0 +1,69 @@
+GUARANTEED LIVING BENEFIT RIDERS (Illustrative Example)
+
+Guaranteed living benefit riders are optional features that policyholders
+may add to a variable annuity contract, typically for an additional annual
+fee, to provide income or withdrawal guarantees that are independent of
+the actual investment performance of the contract.
+
+Guaranteed Minimum Withdrawal Benefit (GMWB)
+
+A GMWB guarantees that the policyholder may withdraw a specified
+percentage of a "benefit base" each year for the rest of their life (or
+for a set number of years, depending on the rider), even if the
+underlying contract value is reduced to zero due to poor investment
+performance or withdrawals.
+
+The benefit base is generally separate from the actual contract value. It
+is typically equal to purchase payments at issue and may increase over
+time through:
+
+- Roll-up: An annual guaranteed growth rate applied to the benefit base
+  (commonly in the range of 5% to 7% annually) during years in which no
+  withdrawals are taken, typically for a limited number of years (often
+  10).
+
+- Step-up (or ratchet): An automatic increase in the benefit base to match
+  the contract value on a contract anniversary, if the contract value is
+  higher than the current benefit base, typically reviewed annually.
+
+The annual withdrawal percentage permitted under a GMWB is usually tied to
+the policyholder's age at the time withdrawals begin, with older
+policyholders generally permitted to withdraw a higher percentage (for
+example, 4% at age 60 versus 5.5% at age 70).
+
+Guaranteed Minimum Income Benefit (GMIB)
+
+A GMIB guarantees a minimum level of annuity income if the policyholder
+annuitizes the contract, regardless of actual account performance. Unlike
+a GMWB, a GMIB generally requires the policyholder to convert the contract
+value into a stream of guaranteed payments (annuitize) in order to access
+the guarantee, rather than allowing ongoing partial withdrawals.
+
+GMIB riders typically include a roll-up rate applied to a separate income
+base, and a required minimum holding period (commonly 10 years) before the
+guarantee can be exercised.
+
+Guaranteed Minimum Accumulation Benefit (GMAB)
+
+A GMAB guarantees that the contract value will be at least equal to a
+specified amount (often purchase payments) after a defined holding period
+(commonly 10 years), regardless of investment performance, without
+requiring annuitization.
+
+Rider Fees and Considerations
+
+Living benefit riders are not free. Annual rider fees are typically
+expressed as a percentage of the benefit base (not the contract value) and
+commonly range from 0.50% to 1.50% annually, depending on the specific
+guarantee selected. Because the fee is often based on the benefit base
+rather than the contract value, the actual dollar fee may not decline even
+if the contract value declines, since the benefit base can be higher than
+the contract value after a market downturn.
+
+Policyholders should weigh the cost of optional riders against the
+likelihood that the guarantee will provide meaningful value, since riders
+that are never used because the underlying investment performance was
+strong still incur charges each year.
+
+This document is an illustrative summary for training and demonstration
+purposes and does not represent the terms of any actual insurance product.

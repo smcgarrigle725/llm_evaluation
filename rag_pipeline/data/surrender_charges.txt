@@ -1,0 +1,61 @@
+SURRENDER CHARGE SCHEDULE (Illustrative Example)
+
+A surrender charge is a fee imposed by an insurance company when a
+policyholder withdraws funds from an annuity contract beyond a permitted
+free withdrawal amount, particularly during the early years of the
+contract. Surrender charges are designed to allow the insurer to recover
+costs associated with issuing the contract, including distribution and
+commission costs.
+
+Standard Surrender Charge Schedule (7-Year Example)
+
+Contract Year      Surrender Charge Percentage
+Year 1                      7%
+Year 2                      7%
+Year 3                      6%
+Year 4                      5%
+Year 5                      4%
+Year 6                      3%
+Year 7                      2%
+Year 8 and beyond           0%
+
+The surrender charge is generally calculated as a percentage of the amount
+withdrawn that exceeds the free withdrawal amount, not the full contract
+value.
+
+Free Withdrawal Amount
+
+Most contracts permit a free withdrawal each contract year, typically up
+to 10% of the contract value (or, in some products, 10% of purchase
+payments) as of the most recent contract anniversary, without incurring a
+surrender charge. Amounts withdrawn beyond the free withdrawal allowance
+during the surrender charge period are subject to the applicable surrender
+charge percentage shown above.
+
+Waiver of Surrender Charge
+
+Surrender charges are commonly waived under certain circumstances,
+including:
+
+- Death of the policyholder (the death benefit is paid without surrender
+  charge).
+- Annuitization of the contract after a minimum holding period (commonly
+  five years), depending on contract terms.
+- Confinement to a licensed nursing home for an extended period, if the
+  contract includes a nursing home waiver rider.
+- Terminal illness, if the contract includes a terminal illness waiver
+  rider.
+
+Market Value Adjustment (MVA)
+
+Some annuity contracts, particularly those with a fixed-rate component,
+include a Market Value Adjustment in addition to or instead of a
+traditional surrender charge. An MVA adjusts the amount paid upon
+surrender or withdrawal based on the change in interest rates between the
+date the purchase payment was made and the date of withdrawal. If interest
+rates have risen since the purchase payment was made, the MVA will
+typically reduce the amount paid to the policyholder; if interest rates
+have fallen, the MVA may increase the amount paid.
+
+This document is an illustrative summary for training and demonstration
+purposes and does not represent the terms of any actual insurance product.
